@@ -1,23 +1,26 @@
 'use strict';
 
-const Item = (function (){
-    function validateName(name){
-        if (!name) {
-            throw new TypeError('Name does not exist');
-        }
-    }
+/* global cuid */
 
-    function create(name) {
-        return {
-            id: cuid(),
-            name,
-            checked: false
-        }
+// eslint-disable-next-line no-unused-vars
+const Item = (function () {
+  function validateName(name) {
+    if (!name) {
+      throw new TypeError('Name does not exist');
     }
-    
+  }
+
+  function create(name) {
     return {
-        validateName,
-        create
-    }
+      id: cuid(),
+      name,
+      checked: false
+    };
+  }
+
+  return {
+    validateName,
+    create
+  };
 
 }());

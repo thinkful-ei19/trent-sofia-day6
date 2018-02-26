@@ -1,5 +1,6 @@
-'use strict'
-/* global store, cuid, Item */
+'use strict';
+/* global store, Item, $ */
+
 
 // eslint-disable-next-line no-unused-vars
 const shoppingList = (function(){
@@ -48,7 +49,6 @@ const shoppingList = (function(){
     }
   
     // render the shopping list in the DOM
-    console.log('`render` ran');
     const shoppingListItemsString = generateShoppingItemsString(items);
   
     // insert that HTML into the DOM
