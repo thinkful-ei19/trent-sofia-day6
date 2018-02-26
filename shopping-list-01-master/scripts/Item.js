@@ -1,3 +1,5 @@
+'use strict';
+
 const Item = (function (){
     function validateName(name){
         if (!name) {
